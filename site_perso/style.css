@@ -1,0 +1,144 @@
+body {
+  -webkit-padding-start: 0;
+  height: 100%;
+  margin: 0px;
+  background-image: url(images/background.jpg);
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 200vw rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0px 100px 0px;
+}
+
+/* HEADER*/
+
+header {
+  height: 100px;
+  background: #262626;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+}
+.logo {
+  width: 30%;
+  float: left;
+  line-height: 100px;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: poppins;
+  color: #fff;
+  letter-spacing: 5px;
+}
+nav {
+  float: right;
+  line-height: 100px;
+}
+nav a {
+  text-decoration: none;
+  font-family: poppins;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+/* HOME */
+
+.myButton {
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin-left: 175px;
+}
+.myButton:hover {
+  background-color: black;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.descr {
+  width: 100%;
+  height: 1100px;
+}
+.descr h2 {
+  margin: 0;
+  padding: 175px 190px 0;
+  font-size: 75px;
+  font-family: poppins;
+  text-transform: uppercase;
+  color: rgb(0, 225, 169);
+}
+
+.descr .name {
+  margin: 0;
+  padding: 0 240px 0;
+  font-size: 20px;
+  font-family: poppins;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.descr .student {
+  margin: 0;
+  padding: 0 335px 0;
+  font-size: 20px;
+  font-family: poppins;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* BLOC */
+
+.bloc-area {
+  opacity: 100%;
+  width: 100%;
+  position: relative;
+  color: white;
+  background-color: #000000;
+  height: 500px;
+}
+.bloc-area h2 {
+  font-family: poppins;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
+}
+.bloc-area p {
+  font-family: poppins;
+  line-height: 30px;
+}
+.colonne-gauche {
+  height: 1500px;
+  float: left;
+  width: 150px;
+  background: #ebebeb;
+}
+.colonne-droite {
+  height: 1500px;
+  float: right;
+  width: 150px;
+  background: #ebebeb;
+}
+.colonne-centre {
+  height: 1500px;
+}
+
+.bloc-test {
+  width: 100%;
+  height: 500px;
+  background: #ebebeb;
+}

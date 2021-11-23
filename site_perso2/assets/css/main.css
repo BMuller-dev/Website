@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("/assets/fonts/Bebas.ttf") format("truetype");
+}
+* {
+  margin: 0;
+}
+body {
+  -webkit-padding-start: 0;
+  height: 100%;
+  background-color: black;
+}
+/*________________________________________________________________HEADER________________________________________________________________*/
+
+header {
+  height: 100px;
+  background: #ffffff;
+  width: 100%;
+  font-family: "Bebas", serif;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.wrapper {
+  color: rgb(107, 39, 195);
+  text-transform: uppercase;
+  line-height: 100px;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0px 100px 0px;
+}
+.logo,
+.cv {
+  width: 10%;
+  float: left;
+  font-size: 30px;
+  color: rgb(221, 0, 0);
+  letter-spacing: 5px;
+}
+
+.cv {
+  float: right;
+}
+
+nav .categorie {
+  margin: 0px 30px 0px;
+}
+
+/*________________________________________________________________________________________________________________________________*/
