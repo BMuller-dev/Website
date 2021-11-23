@@ -21,11 +21,13 @@ header {
   z-index: 10;
   position: fixed;
 }
+
 .logo {
   width: 30%;
   float: left;
   line-height: 100px;
 }
+
 .logo a {
   text-decoration: none;
   font-size: 30px;
@@ -33,10 +35,12 @@ header {
   color: #fff;
   letter-spacing: 5px;
 }
+
 nav {
   float: right;
   line-height: 100px;
 }
+
 nav a {
   text-decoration: none;
   font-family: poppins;
@@ -61,9 +65,11 @@ nav a {
   text-decoration: none;
   margin-left: 175px;
 }
+
 .myButton:hover {
   background-color: black;
 }
+
 .myButton:active {
   position: relative;
   top: 1px;
@@ -73,6 +79,7 @@ nav a {
   width: 100%;
   height: 1100px;
 }
+
 .descr h2 {
   margin: 0;
   padding: 175px 190px 0;
@@ -106,10 +113,11 @@ nav a {
   opacity: 100%;
   width: 100%;
   position: relative;
-  color: white;
-  background-color: #000000;
+  color: black;
+  background-color: #ebebeb;
   height: 500px;
 }
+
 .bloc-area h2 {
   font-family: poppins;
   letter-spacing: 4px;
@@ -117,22 +125,26 @@ nav a {
   font-size: 40px;
   margin: 0;
 }
+
 .bloc-area p {
   font-family: poppins;
   line-height: 30px;
 }
+
 .colonne-gauche {
   height: 1500px;
   float: left;
   width: 150px;
   background: #ebebeb;
 }
+
 .colonne-droite {
   height: 1500px;
   float: right;
   width: 150px;
   background: #ebebeb;
 }
+
 .colonne-centre {
   height: 1500px;
 }
