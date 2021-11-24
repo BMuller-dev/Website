@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/main.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src=" assets/js/main.js">
+    </script>
 </head>
 
 <body>

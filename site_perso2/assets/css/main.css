@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Bebas";
-  src: url("/projet_en_cours/site_perso2/assets/fonts/Bebas.ttf") format("truetype");
+  src: url("/projet_en_cours/site_perso2/assets/fonts/Bebas.ttf")
+    format("truetype");
 }
 
 * {
@@ -10,7 +11,7 @@
 body {
   -webkit-padding-start: 0;
   height: 100%;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 /*________________________________________________________________HEADER________________________________________________________________*/
@@ -19,7 +20,6 @@ header {
   height: 100px;
   background: #ffffff;
   width: 100%;
-
 }
 
 nav a {
@@ -28,12 +28,12 @@ nav a {
 
 .wrapper {
   font-family: "Bebas", serif;
-  color: rgb(107, 39, 195);
   text-transform: uppercase;
   line-height: 100px;
   letter-spacing: 4px;
   font-size: 20px;
   margin: 0px 100px 0px;
+  color: black;
 }
 
 .logo,
