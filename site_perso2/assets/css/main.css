@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Bebas";
-  src: url("/projet_en_cours/site_perso2/assets/fonts/Bebas.ttf")
-    format("truetype");
+  src: url("assets/fonts/Bebas.ttf") format("truetype");
 }
 
 * {
@@ -18,39 +17,38 @@ body {
 
 header {
   height: 100px;
-  background: #ffffff;
-  width: 100%;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-.wrapper {
+  background: #868484;
   font-family: "Bebas", serif;
   text-transform: uppercase;
   line-height: 100px;
   letter-spacing: 4px;
-  font-size: 20px;
-  margin: 0px 100px 0px;
-  color: black;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10%, 50%, 20%;
+}
+nav a {
+  text-decoration: none;
 }
 
-.logo,
-.cv {
-  width: 10%;
-  float: left;
+.logo {
+  grid-column: 1;
   font-size: 30px;
-  color: rgb(221, 0, 0);
   letter-spacing: 5px;
+  color: red;
+}
+
+.categorie {
+  grid-column: 2;
+  color: black;
+  font-size: 20px;
 }
 
 .cv {
-  float: right;
-}
-
-nav .categorie {
-  margin: 0px 30px 0px;
+  grid-column: 3;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: red;
 }
 
 /*________________________________________________________________________________________________________________________________*/
