@@ -7,23 +7,32 @@
     <title></title>
     <link href="assets/css/main.css" rel="stylesheet">
     <script src="assets/js/main.js">
-    </script>
-</head>
+        < /head>
 
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">BM</a>
-            </div>
-            <div class="categorie">
-                <a class="about" href="#">About</a>
-                <a class="galerie" href="#">Galerie</a>
-                <a class="contact" href="#">Contact</a>
-            </div>
-            <div class="cv">
-                <a href="#">CV</a>
-            </div>
-        </nav>
-    </header>
-    <main>
+        <
+        body >
+            <
+            header >
+            <
+            nav >
+            <
+            div class = "logo" >
+            <
+            a href = "#" > BM < /a> <
+            /div> <
+            div class = "categorie" >
+            <
+            a class = "about"
+        href = "#" > About < /a> <
+            a class = "galerie"
+        href = "#" > Galerie < /a> <
+            a class = "contact"
+        href = "#" > Contact < /a> <
+            /div> <
+            div class = "cv" >
+            <
+            a href = "#" > CV < /a> <
+            /div> <
+            /nav> <
+            /header> <
+            main >
