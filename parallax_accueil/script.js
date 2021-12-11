@@ -17,7 +17,4 @@ window.addEventListener('scroll',function(){
     text.style.marginTop = value * 1.5  + 'px';
     button.style.marginTop = value * 1.5  + 'px';
     header.style.top = value * 0.5  +'px';
-
-
-
 })
