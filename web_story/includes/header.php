@@ -12,13 +12,11 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-        </nav>
+        <ul>
+            <li><a href="#">ipsum dolor</a></li>
+            <li><a href="#">ipsum dolor</a></li>
+            <li><a href="#">ipsum dolor</a></li>
+            <li><a href="#">ipsum dolor</a></li>
+        </ul>
     </header>
     <main>
