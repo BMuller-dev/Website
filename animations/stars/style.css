@@ -1,0 +1,36 @@
+    body {
+        background-color: #0f056b;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .stars {
+        top: 15%;
+        left: 20%;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid rgb(255, 255, 255);
+        background-color: #0f056b;
+        animation: animate 1s linear infinite;
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    
+    .stars:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid rgb(255, 255, 255);
+    }
