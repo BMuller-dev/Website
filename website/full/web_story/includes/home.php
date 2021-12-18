@@ -1,3 +1,27 @@
+<div class="scene">
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <article>
     <h1>Premier paragraphe histoire</h1>
     <section class="p_story_1"></section>
