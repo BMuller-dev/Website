@@ -1,47 +1,85 @@
 @font-face {
-    font-family: "Bebas";
-    src: url(assets/fonts/Bebas.ttf) format("truetype");
+  font-family: "Bebas";
+  src: url(assets/fonts/Bebas.ttf) format("truetype");
 }
 
 body {
-    min-height: 100vh;
-    overflow-x: hidden;
-    background-color: linear-gradient(#2b1055, #7597de);
-    margin: 0;
+  height: 100vh;
+  margin: 0;
 }
 
+/* HOMEPAGE */
+
+.scene {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 150vh;
+  width: 100%;
+  background-attachment: fixed;
+  background: linear-gradient(#080d2e, #2b2f77, #855988);
+}
+
+.night {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.forest {
+  position: absolute;
+  top: 500px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.scene i {
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+@keyframes {
+}
 
 /* HEADER */
 
 header {
-    font-family: "Bebas.ttf";
-    background-color: #ffd7d0;
-    height: 20vh;
-    z-index: 10000;
+  font-family: "Bebas.ttf";
+  background-color: #b11b00;
+  height: 20vh;
+  z-index: 10000;
 }
 
 header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 header ul li {
-    list-style: none;
-    margin-left: 20px;
+  list-style: none;
+  margin-left: 20px;
 }
 
 header ul li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 header ul li a:hover,
 header ul li a.active {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
 }
