@@ -1,5 +1,17 @@
 <div class="scene">
     <div class="night"></div>
+    <img class="cloud0" src="assets/img/dark_cloud1.png" alt="A dark cloud image">
+    <img class="cloud1" src="assets/img/dark_cloud3.png" alt="A dark cloud image">
+    <img class="cloud2" src="assets/img/dark_cloud2.png" alt="A dark cloud image">
+    <img class="cloud3" src="assets/img/dark_cloud3.png" alt="A dark cloud image">
+    <img class="cloud4" src="assets/img/dark_cloud4.png" alt="A dark cloud image">
+    <img class="cloud5" src="assets/img/dark_cloud5.png" alt="A dark cloud image">
+    <img class="cloud6" src="assets/img/dark_cloud3.png" alt="A dark cloud image">
+    <img class="cloud7" src="assets/img/dark_cloud5.png" alt="A dark cloud image">
+    <img class="cloud8" src="assets/img/dark_cloud4.png" alt="A dark cloud image">
+    <img class="cloud9" src="assets/img/dark_cloud2.png" alt="A dark cloud image">
+
+
     <img class="forest" src="assets/img/dark_forest2.png" alt="A dark forest image">
 </div>
 
@@ -14,36 +26,30 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-<script>
+<!-- <script>
     function stars() {
         let scene = document.querySelector(".scene");
 
-        for (let i = 0; i < 1250; i++) {
+        for (let i = 0; i < 500; i++) {
             let star = document.createElement("i");
             let x = Math.floor(Math.random() * window.innerHeight);
             let y = Math.floor(Math.random() * window.innerWidth);
+            let duration = Math.random() * 10;
             let size = Math.random() * 2;
 
             star.style.left = x * 2 + "px";
-            star.style.top = y * 2 + "px";
+            star.style.top = y + "px";
             star.style.width = 1 + size + "px";
             star.style.height = 1 + size + "px";
+
+            star.style.animationDuration = 5 + duration + 's';
+            star.style.animationDelay = duration + 's';
 
             scene.appendChild(star);
         }
     }
     stars();
-</script>
+</script> -->
 
 
 

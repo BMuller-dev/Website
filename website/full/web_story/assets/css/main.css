@@ -17,7 +17,7 @@ body {
   height: 150vh;
   width: 100%;
   background-attachment: fixed;
-  background: linear-gradient(#080d2e, #2b2f77, #855988);
+  background: linear-gradient(#080d2e 40%, #2b2f77);
 }
 
 .night {
@@ -32,10 +32,92 @@ body {
 .forest {
   position: absolute;
   top: 500px;
-  bottom: 0;
-  left: 0;
   width: 100%;
   z-index: 10000;
+}
+
+.cloud0 {
+  position: absolute;
+  top: 50px;
+  z-index: 10000;
+  animation: cloudAnimation 40s linear infinite;
+  animation-delay: -10s;
+}
+.cloud1 {
+  position: absolute;
+  top: 200px;
+  z-index: 10000;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -25s;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 325px;
+  z-index: 10000;
+  animation: cloudAnimation 35s linear infinite;
+  animation-delay: -17s;
+}
+
+.cloud3 {
+  position: absolute;
+  top: 175px;
+  z-index: 10000;
+  animation: cloudAnimation 55s linear infinite;
+  animation-delay: -25s;
+}
+
+.cloud4 {
+  position: absolute;
+  top: 75px;
+  z-index: 10000;
+  animation: cloudAnimation 60s linear infinite;
+  animation-delay: -20s;
+}
+
+.cloud5 {
+  position: absolute;
+  top: 350px;
+  z-index: 10000;
+  animation: cloudAnimation 60s linear infinite;
+  animation-delay: -5s;
+}
+.cloud6 {
+  position: absolute;
+  top: 100px;
+  z-index: 10000;
+  animation: cloudAnimation 60s linear infinite;
+  animation-delay: -20s;
+}
+.cloud7 {
+  position: absolute;
+  top: 50px;
+  z-index: 10000;
+  animation: cloudAnimation 60s linear infinite;
+  animation-delay: -10s;
+}
+.cloud8 {
+  position: absolute;
+  top: 50px;
+  z-index: 10000;
+  animation: cloudAnimation 60s linear infinite;
+  animation-delay: -10s;
+}
+.cloud9 {
+  position: absolute;
+  top: 50px;
+  z-index: 10000;
+  animation: cloudAnimation 60s linear infinite;
+  animation-delay: -10s;
+}
+
+@keyframes cloudAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
 }
 
 .scene i {
@@ -44,9 +126,24 @@ body {
   position: absolute;
   background: #fff;
   border-radius: 50%;
+  animation: animate_stars 1s linear infinite;
 }
 
-@keyframes {
+@keyframes animate_stars {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(250px, 250px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(500px, 500px);
+  }
 }
 
 /* HEADER */
