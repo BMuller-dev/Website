@@ -11,36 +11,49 @@ body {
 /* HOMEPAGE */
 
 .scene {
-  display: flex;
   position: relative;
   overflow: hidden;
-  height: 150vh;
+  height: 140vh;
   width: 100%;
   background-attachment: fixed;
-  background: linear-gradient(#080d2e 40%, #2b2f77);
+  background: #080d2e;
 }
 
 .night {
+  margin: 30% 40% 0;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background: #fff;
+  width: 300px;
+  height: 300px;
+  background: #f5deb3;
   border-radius: 50%;
-  z-index: 10000;
+  z-index: 400;
+}
+
+.night::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background: #080d2e;
 }
 
 .forest {
   position: absolute;
   top: 500px;
+  margin: 0;
   width: 100%;
   z-index: 10000;
 }
 
+/* CLOUD */
 .cloud0 {
   position: absolute;
   top: 50px;
   z-index: 10000;
-  animation: cloudAnimation 40s linear infinite;
+  animation: cloudAnimation 30s linear infinite;
   animation-delay: -10s;
 }
 .cloud1 {
@@ -48,69 +61,65 @@ body {
   top: 200px;
   z-index: 10000;
   animation: cloudAnimation 30s linear infinite;
-  animation-delay: -25s;
+  animation-delay: -15s;
 }
-
 .cloud2 {
   position: absolute;
   top: 325px;
   z-index: 10000;
-  animation: cloudAnimation 35s linear infinite;
-  animation-delay: -17s;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -20s;
 }
-
 .cloud3 {
   position: absolute;
   top: 175px;
   z-index: 10000;
-  animation: cloudAnimation 55s linear infinite;
+  animation: cloudAnimation 30s linear infinite;
   animation-delay: -25s;
 }
-
 .cloud4 {
   position: absolute;
   top: 75px;
   z-index: 10000;
-  animation: cloudAnimation 60s linear infinite;
-  animation-delay: -20s;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -30s;
 }
-
 .cloud5 {
   position: absolute;
   top: 350px;
   z-index: 10000;
-  animation: cloudAnimation 60s linear infinite;
-  animation-delay: -5s;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -35s;
 }
 .cloud6 {
   position: absolute;
   top: 100px;
   z-index: 10000;
-  animation: cloudAnimation 60s linear infinite;
-  animation-delay: -20s;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -40s;
 }
 .cloud7 {
   position: absolute;
-  top: 50px;
+  top: 300px;
   z-index: 10000;
-  animation: cloudAnimation 60s linear infinite;
-  animation-delay: -10s;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -45s;
 }
 .cloud8 {
   position: absolute;
-  top: 50px;
+  top: 450px;
   z-index: 10000;
-  animation: cloudAnimation 60s linear infinite;
-  animation-delay: -10s;
+  animation: cloudAnimation 30s linear infinite;
+  animation-delay: -50s;
 }
 .cloud9 {
   position: absolute;
-  top: 50px;
+  top: 175px;
   z-index: 10000;
   animation: cloudAnimation 60s linear infinite;
-  animation-delay: -10s;
+  animation-delay: -55s;
 }
-
+/* ANIMATE CLOUD */
 @keyframes cloudAnimation {
   0% {
     transform: translateX(-100%);
@@ -120,6 +129,7 @@ body {
   }
 }
 
+/* STARS */
 .scene i {
   justify-items: center;
   align-items: center;
@@ -127,6 +137,7 @@ body {
   background: #fff;
   border-radius: 50%;
   animation: animate_stars 1s linear infinite;
+  z-index: 500;
 }
 
 @keyframes animate_stars {
@@ -150,8 +161,7 @@ body {
 
 header {
   font-family: "Bebas.ttf";
-  background-color: #b11b00;
-  height: 20vh;
+
   z-index: 10000;
 }
 
@@ -179,4 +189,13 @@ header ul li a:hover,
 header ul li a.active {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
+}
+
+/* ARTICLE 1 */
+
+.all_story,
+h1 {
+  background: black;
+  color: #fff;
+  margin: 0;
 }
