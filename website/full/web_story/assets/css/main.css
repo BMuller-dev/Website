@@ -8,13 +8,26 @@ body {
   margin: 0;
 }
 
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #02234d;
+}
+
 /* HOMEPAGE */
 
 .scene {
   display: flex;
   position: relative;
   overflow: hidden;
-  height: 145vh;
+  height: 1vh;
   width: 100%;
   background-attachment: fixed;
   background: linear-gradient(to top, #26275b 60%, #0a0a36);
@@ -58,70 +71,70 @@ body {
 .cloud0 {
   position: absolute;
   top: 50px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -10s;
 }
 .cloud1 {
   position: absolute;
   top: 200px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -15s;
 }
 .cloud2 {
   position: absolute;
   top: 325px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -20s;
 }
 .cloud3 {
   position: absolute;
   top: 175px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -25s;
 }
 .cloud4 {
   position: absolute;
   top: 75px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -30s;
 }
 .cloud5 {
   position: absolute;
   top: 350px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -35s;
 }
 .cloud6 {
   position: absolute;
   top: 100px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -40s;
 }
 .cloud7 {
   position: absolute;
   top: 300px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -45s;
 }
 .cloud8 {
   position: absolute;
   top: 450px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 30s linear infinite;
   animation-delay: -50s;
 }
 .cloud9 {
   position: absolute;
   top: 175px;
-  z-index: 10000;
+  z-index: 1000;
   animation: cloudAnimation 60s linear infinite;
   animation-delay: -55s;
 }
@@ -163,41 +176,7 @@ body {
   }
 }
 
-/* HEADER */
-
-header {
-  font-family: "Bebas.ttf";
-
-  z-index: 10000;
-}
-
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-header ul li {
-  list-style: none;
-  margin-left: 20px;
-}
-
-header ul li a {
-  text-decoration: none;
-  padding: 6px 15px;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  text-transform: uppercase;
-}
-
-header ul li a:hover,
-header ul li a.active {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-}
-
-/* ARTICLE 1 */
+/* STORY */
 
 .all_story {
   background: linear-gradient(black 20%, #26275b);

@@ -6,17 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="assets/css/main.css" rel="stylesheet">
-
-    <title>Document</title>
+    <title>The story of</title>
 </head>
 
+
 <body>
-    <header>
-        <ul>
-            <li><a href="#">ipsum dolor</a></li>
-            <li><a href="#">ipsum dolor</a></li>
-            <li><a href="#">ipsum dolor</a></li>
-            <li><a href="#">ipsum dolor</a></li>
-        </ul>
-    </header>
+
     <main>
