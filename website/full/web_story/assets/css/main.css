@@ -27,10 +27,10 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-  height: 1vh;
+  height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  background: linear-gradient(to top, #26275b 60%, #0a0a36);
+  background: #15163f;
 }
 
 .moon {
@@ -52,7 +52,7 @@ body {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  background: #26275b;
+  background: #15163f;
 }
 
 .forest {
@@ -174,18 +174,4 @@ body {
     opacity: 0;
     transform: translate(100px, 100px);
   }
-}
-
-/* STORY */
-
-.all_story {
-  background: linear-gradient(black 20%, #26275b);
-  color: #fff;
-  margin: 0;
-  height: 100vh;
-}
-
-.all_story h1 {
-  margin: 0;
-  color: #fff;
 }
