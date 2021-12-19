@@ -1,5 +1,5 @@
 <div class="scene">
-    <div class="night"></div>
+    <div class="moon"></div>
     <img class="cloud0" src="assets/img/dark_cloud1.png" alt="A dark cloud image">
     <img class="cloud1" src="assets/img/dark_cloud3.png" alt="A dark cloud image">
     <img class="cloud2" src="assets/img/dark_cloud2.png" alt="A dark cloud image">
@@ -30,20 +30,21 @@
     function stars() {
         let scene = document.querySelector(".scene");
 
-        for (let i = 0; i < 500; i++) {
+        for (let i = 0; i < 200; i++) {
             let star = document.createElement("i");
-            let x = Math.floor(Math.random() * window.innerHeight);
+            let x = Math.floor(Math.random() * window.innerHeight) * 2;
             let y = Math.floor(Math.random() * window.innerWidth);
-            let duration = Math.random() * 10;
+            let duration = Math.floor(Math.random() * 10) + 1;
             let size = Math.random() * 2;
+            console.log(duration)
 
-            star.style.left = x * 2 + "px";
+            star.style.left = x + "px";
             star.style.top = y + "px";
             star.style.width = 1 + size + "px";
             star.style.height = 1 + size + "px";
 
+
             star.style.animationDuration = 5 + duration + 's';
-            star.style.animationDelay = duration + 's';
 
             scene.appendChild(star);
         }
@@ -66,24 +67,27 @@
 
 
 <div class="all_story">
-    <article>
+
+    <section class="p_story_1">
         <h1>Premier paragraphe histoire</h1>
-        <section class="p_story_1"></section>
-    </article>
-    <article>
+    </section>
+
+
+    <section class="p_story_2">
         <h1>Deuxième paragraphe histoire</h1>
-        <section class="p_story_2"></section>
-    </article>
-    <article>
+    </section>
+
+
+    <section class="p_story_3">
         <h1>Troisième paragraphe histoire</h1>
-        <section class="p_story_3"></section>
-    </article>
-    <article>
+    </section>
+
+    <section class="p_story_4">
         <h1>Quatrième paragraphe histoire</h1>
-        <section class="p_story_4"></section>
-    </article>
-    <article>
+    </section>
+
+
+    <section class="p_story_5">
         <h1>Cinquième paragraphe histoire</h1>
-        <section class="p_story_5"></section>
-    </article>
+    </section>
 </div>

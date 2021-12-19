@@ -11,16 +11,18 @@ body {
 /* HOMEPAGE */
 
 .scene {
+  display: flex;
   position: relative;
   overflow: hidden;
-  height: 140vh;
+  height: 145vh;
   width: 100%;
   background-attachment: fixed;
-  background: #080d2e;
+  background: linear-gradient(to top, #26275b 60%, #0a0a36);
 }
 
-.night {
-  margin: 30% 40% 0;
+.moon {
+  align-self: center;
+  margin-left: 45%;
   position: absolute;
   width: 300px;
   height: 300px;
@@ -29,7 +31,7 @@ body {
   z-index: 400;
 }
 
-.night::after {
+.moon::after {
   content: "";
   position: absolute;
   top: -30px;
@@ -37,18 +39,22 @@ body {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  background: #080d2e;
+  background: #26275b;
 }
 
 .forest {
   position: absolute;
-  top: 500px;
+  align-self: end;
   margin: 0;
   width: 100%;
   z-index: 10000;
 }
 
 /* CLOUD */
+.scene img {
+  object-fit: cover;
+  pointer-events: none;
+}
 .cloud0 {
   position: absolute;
   top: 50px;
@@ -136,24 +142,24 @@ body {
   position: absolute;
   background: #fff;
   border-radius: 50%;
-  animation: animate_stars 1s linear infinite;
+  animation: animate_stars linear infinite;
   z-index: 500;
 }
 
+/* ANIMATE STARS */
 @keyframes animate_stars {
   0% {
     opacity: 0;
-    transform: translate(0px, 0px);
   }
 
-  50% {
+  25% {
     opacity: 1;
-    transform: translate(250px, 250px);
+    transform: translate(0px, 0px);
   }
 
   100% {
     opacity: 0;
-    transform: translate(500px, 500px);
+    transform: translate(100px, 100px);
   }
 }
 
@@ -193,9 +199,14 @@ header ul li a.active {
 
 /* ARTICLE 1 */
 
-.all_story,
-h1 {
-  background: black;
+.all_story {
+  background: linear-gradient(black 20%, #26275b);
   color: #fff;
   margin: 0;
+  height: 100vh;
+}
+
+.all_story h1 {
+  margin: 0;
+  color: #fff;
 }
