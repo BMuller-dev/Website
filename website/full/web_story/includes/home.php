@@ -26,7 +26,7 @@
 
 
 
-<script>
+<!-- <script>
     function stars() {
         let scene = document.querySelector(".scene");
 
@@ -50,4 +50,4 @@
         }
     }
     stars();
-</script>
+</script> -->
