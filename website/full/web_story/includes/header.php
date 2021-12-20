@@ -10,7 +10,5 @@
     <title>The story of</title>
 </head>
 
-
 <body>
-
     <main>

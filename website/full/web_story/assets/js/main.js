@@ -21,5 +21,3 @@ function stars() {
     }
 }
 
-
-stars();
