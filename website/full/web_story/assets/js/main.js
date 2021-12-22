@@ -20,4 +20,4 @@ function stars() {
         scene.appendChild(star);
     }
 }
-
+stars()

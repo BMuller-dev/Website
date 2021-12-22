@@ -1,98 +1,67 @@
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #e04951;
-        }
-        
-        .heart {
-            top: 40%;
-            left: 40%;
-            height: 100px;
-            width: 180px;
-            position: absolute;
-            transform-origin: right bottom;
-            background-color: #C8A2C8;
-            transition: 1s;
-        }
-        
-        .heart:before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            transform-origin: right bottom;
-            background-color: #fff;
-            transition: 2s;
-        }
-        
-        .heart:hover {
-            transform: rotate(45deg);
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px
-        }
-        
-        .heart:hover:before {
-            transform: rotate(450deg) translateY(100px);
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-            background-color: #C8A2C8;
-        }
-        
-        .heart1 {
-            fill: #C8A2C8;
-            position: relative;
-            top: 5px;
-            width: 50px;
-            animation: pulse 1.5s ease infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale( .75);
-            }
-            20% {
-                transform: scale( 1);
-            }
-            40% {
-                transform: scale( .75);
-            }
-            60% {
-                transform: scale( 1);
-            }
-            80% {
-                transform: scale( .75);
-            }
-            100% {
-                transform: scale( .75);
-            }
-        }
-        
-        .heart1 {
-            background-color: #C8A2C8;
-            display: inline-block;
-            height: 30px;
-            margin: 100px 10px;
-            position: relative;
-            left: 50%;
-            width: 30px;
-        }
-        
-        .heart1:before,
-        .heart1:after {
-            content: "";
-            background-color: #C8A2C8;
-            border-radius: 50%;
-            height: 30px;
-            position: absolute;
-            width: 30px;
-        }
-        
-        .heart1:before {
-            top: -15px;
-            left: 0;
-        }
-        
-        .heart1:after {
-            left: 15px;
-            top: 0;
-        }
+body {
+  margin: 0;
+  padding: 0;
+  background: #65001f;
+  font-family: "Oooh Baby", cursive;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.waifu {
+  pointer-events: none;
+  color: #65001f;
+  font-size: 100px;
+  text-align: center;
+}
+
+.heart {
+  animation: pulse 1s infinite;
+}
+
+.shape {
+  position: relative;
+  width: 200px;
+  height: 160px;
+}
+
+.shape:before,
+.shape:after {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 160px;
+  background: #f7799b;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  animation: pulsecolor 1s infinite;
+}
+
+.shape:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+  animation: pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+  10% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulsecolor {
+  60% {
+    background: #ffa1ad;
+  }
+}
