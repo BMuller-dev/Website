@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #50466b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 3px solid gray;
+  height: 625px;
+  width: 300px;
+  border-radius: 30px;
+}
+.accessoire {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.camera {
+  border-radius: 7px;
+  height: 7px;
+  margin-right: 7px;
+  width: 7px;
+  background-color: #ececec;
+}
+.barre {
+  border-radius: 5px;
+  height: 5px;
+  width: 35px;
+  background-color: #ececec;
+}
+.ecran {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#884857 80%, rgba(0, 0, 0, 0.8));
+  box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.5);
+  height: 450px;
+  width: 250px;
+}
+
+.lecteur {
+  align-self: center;
+  background-color: #c46668;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+  height: 200px;
+  width: 200px;
+}
+
+.titre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -50px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.titre .song-artist {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 0;
+  letter-spacing: 2px;
+}
+.titre .song-title {
+  color: #b3b3b3;
+  font-size: 12px;
+  margin: 0;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.home {
+  border: 3px solid #ececec;
+  border-radius: 35px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
