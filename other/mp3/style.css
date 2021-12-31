@@ -61,21 +61,37 @@ body {
 .titre {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
-  margin-top: -50px;
+  width: 100%;
+  height: 50px;
   color: white;
   font-family: "Oswald", sans-serif;
 }
 .titre .song-artist {
   font-size: 16px;
   font-weight: 600;
-  margin: 10px 0 0;
   letter-spacing: 2px;
 }
 .titre .song-title {
   color: #b3b3b3;
   font-size: 12px;
   margin: 0;
+}
+.controle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-top: -50px;
+  color: white;
+}
+.fa {
+  cursor: pointer;
+}
+.fa-pause-circle {
+  margin: 0 40px 0;
 }
 .button {
   display: flex;
