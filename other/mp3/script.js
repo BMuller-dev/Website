@@ -1,7 +1,8 @@
 let player = document.querySelector(".center");
 let audio1 = new Audio("vas.mp3");
 let current = false;
-let current_timer = document.querySelector('.current-timer')
+let current_timer = document.querySelector('.current-timer');
+let icon = document.querySelectorAll('.icon');
 
 
 player.addEventListener("click", function () {
@@ -22,3 +23,11 @@ function temps() {
     setTimeout("temps()",1000);
 }
 
+icon.forEach(function(element) {
+    element.addEventListener("click", function(e) {
+        e.style.color = "red"
+        console.log('test')
+    })
+
+    
+});
