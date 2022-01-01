@@ -17,7 +17,7 @@ body {
   flex-wrap: wrap;
   background-color: white;
   border: 3px solid gray;
-  height: 625px;
+  height: 650px;
   width: 300px;
   border-radius: 30px;
 }
@@ -46,7 +46,7 @@ body {
   flex-wrap: wrap;
   background: linear-gradient(#884857 80%, rgba(0, 0, 0, 0.8));
   box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.5);
-  height: 450px;
+  height: 500px;
   width: 250px;
 }
 
@@ -64,7 +64,6 @@ body {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 50px;
   color: white;
   font-family: "Oswald", sans-serif;
 }
@@ -83,19 +82,51 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px;
-  margin-top: -50px;
   color: white;
 }
 .fa {
   cursor: pointer;
 }
-.fa-pause-circle {
+.center {
   margin: 0 40px 0;
 }
 .button {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.current-playing {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #b3b3b3;
+  width: 100%;
+  margin: 0 20px 5px;
+  font-size: 10px;
+}
+.slider {
+  background-color: gray;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+.progression {
+  z-index: 1;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  margin-top: -2px;
+  height: 8px;
+  width: 8px;
+}
+.progres {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0 20px 0;
   width: 100%;
 }
 .home {
