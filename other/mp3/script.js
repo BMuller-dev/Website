@@ -1,46 +1,50 @@
-let play = document.querySelector(".center");
-let player = new Audio("vas.mp3");
+// Ajoutez plus tard une base de donées avec plusieurs musiques
+let media = new Audio("vas.mp3");
 
-let playing = false;
-let current_Time = document.querySelector('.current-timer');
+let play_pause = document.querySelector(".center");
+let max_timer = document.querySelector(".max-timer");
 
+let current_timer = document.querySelector(".current-timer");
 
+let ball = document.querySelector(".ball");
 
+play_pause.addEventListener("click", togglePlay);
+media.addEventListener("timeupdate", progressBar);
 
-// let progression = document.querySelector('.progression')
-// let slider = document.querySelector('.slider')
-// let slider_width = slider.clientWidth
-// let icon = document.querySelectorAll('.icon');
-
-// Timer de la musique
-function formatTime(x) {
-    let min = Math.floor(x / 60);
-    let sec = Math.floor(x % 60);
-    return min + ':' + ((sec<10) ? ('0' + sec) : sec);
-}
-
-// Gestion du mode play & resume
-play.addEventListener("click", function () {
-    updateProgress()
-  if (playing === false) {
-    player.play();
-    play.classList.replace('fa-play-circle', 'fa-pause-circle')
-    playing = true;
-  } else {
-    player.pause();
-    play.classList.replace('fa-pause-circle', 'fa-play-circle')
-    playing = false;
-  }
+media.addEventListener("loadedmetadata", function () {
+  max_timer.textContent = formatTime(media.duration);
 });
 
-// Actualisation
-function updateProgress() {
-    current_Time.innerHTML = formatTime(player.currentTime)
-    setTimeout("updateProgress()",1000);
+function formatTime(x) {
+  let min = Math.floor(x / 60);
+  let sec = Math.floor(x % 60);
+  return min + ":" + (sec < 10 ? "0" + sec : sec);
 }
 
-// let current = player.currentTime
-// let percent = (current / player.duration) * 100;
-// progression.style.marginLeft = percent + 'px'
+function percentPlayed() {
+  let slider = document.querySelector(".slider").clientWidth;
+  let ratio = slider / media.duration;
+  let percentage = (media.currentTime * ratio).toFixed(2);
+  ball.style.marginLeft = percentage + "px";
+}
 
+function progressBar() {
+  current_timer.textContent = formatTime(media.currentTime);
 
+  media.onended = () => {
+    play_pause.classList.replace("fa-pause-circle", "fa-play-circle");
+    current_timer.textContent = "00:00";
+    ball.style.marginLeft = "0px";
+  };
+  percentPlayed();
+}
+
+function togglePlay() {
+  if (media.paused === true) {
+    media.play();
+    play_pause.classList.replace("fa-play-circle", "fa-pause-circle");
+  } else {
+    media.pause();
+    play_pause.classList.replace("fa-pause-circle", "fa-play-circle");
+  }
+}

@@ -21,7 +21,9 @@ body {
   width: 300px;
   border-radius: 30px;
 }
-.accessoire {
+
+/* TOP OF THE PHONE */
+.accessory {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -34,13 +36,15 @@ body {
   width: 7px;
   background-color: #ececec;
 }
-.barre {
+.bar {
   border-radius: 5px;
   height: 5px;
   width: 35px;
   background-color: #ececec;
 }
-.ecran {
+
+/* START PHONE CONTENT */
+.screen {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -50,7 +54,7 @@ body {
   width: 250px;
 }
 
-.lecteur {
+.song {
   align-self: center;
   background-color: #c46668;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
@@ -58,7 +62,8 @@ body {
   width: 200px;
 }
 
-.titre {
+/* TITLE */
+.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,35 +72,33 @@ body {
   color: white;
   font-family: "Oswald", sans-serif;
 }
-.titre .song-artist {
+.title .song-artist {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
 }
-.titre .song-title {
+.title .song-title {
   color: #b3b3b3;
   font-size: 12px;
   margin: 0;
 }
-.controle {
+
+/* CONTROL */
+.control {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   color: white;
 }
-.fa {
+.control .fa {
   cursor: pointer;
 }
 .center {
   margin: 0 40px 0;
 }
-.button {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 
+/* READING STATUS */
 .current-playing {
   display: flex;
   justify-content: space-between;
@@ -113,7 +116,7 @@ body {
   position: relative;
   width: 100%;
 }
-.progression {
+.ball {
   z-index: 1;
   background-color: white;
   border-radius: 8px;
@@ -122,17 +125,26 @@ body {
   height: 8px;
   width: 8px;
 }
-.progres {
+.progress {
   display: flex;
   align-items: flex-start;
   flex-wrap: nowrap;
   margin: 0 20px 0;
   width: 100%;
 }
+
+/* INTERACTION BUTTON */
 .icon .fa {
   display: flex;
   justify-content: space-between;
   color: black;
+}
+
+/* BOTTOM OF THE PHONE */
+.bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .home {
   border: 3px solid #ececec;
