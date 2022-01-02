@@ -48,3 +48,19 @@ function togglePlay() {
     play_pause.classList.replace("fa-pause-circle", "fa-play-circle");
   }
 }
+
+let icon = document.querySelectorAll(".icon");
+let favorite = false;
+
+icon.forEach(function(element){
+  element.addEventListener("click", function(e) {
+    if(favorite === false) {
+    e.target.style.color = "red"
+    favorite = true
+  } else {
+    e.target.style.color = "#b3b3b3"
+    favorite = false
+  }
+  })
+})
+

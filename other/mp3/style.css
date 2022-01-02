@@ -48,7 +48,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(#884857 80%, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(#d17b0c 80%, rgba(0, 0, 0, 0.8));
   box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.5);
   height: 500px;
   width: 250px;
@@ -56,7 +56,8 @@ body {
 
 .song {
   align-self: center;
-  background-color: #c46668;
+  background-image: url(img/vas.jpg);
+  background-position: center;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
   height: 200px;
   width: 200px;
@@ -134,10 +135,10 @@ body {
 }
 
 /* INTERACTION BUTTON */
-.icon .fa {
+.icon {
   display: flex;
-  justify-content: space-between;
-  color: black;
+  gap: 10px;
+  color: #b3b3b3;
 }
 
 /* BOTTOM OF THE PHONE */
