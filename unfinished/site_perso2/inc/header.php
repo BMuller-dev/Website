@@ -13,11 +13,14 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"> BM </a></div>
+                <a href="#"> ?? </a>
+            </div>
             <div class="categorie">
-                <a class="about" href="#"> About </a> <a class="galerie" href="#"> Galerie </a> <a class="contact" href="#"> Contact </a> </div>
+                <a class="about" href="#"> About </a> <a class="galerie" href="#"> Galerie </a> <a class="contact" href="#"> Contact </a>
+            </div>
             <div class="cv">
-                <a href="#"> CV </a></div>
+                <a href="#"> ?? </a>
+            </div>
         </nav>
     </header>
     <main>
