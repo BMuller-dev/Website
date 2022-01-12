@@ -148,6 +148,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   padding: 0 100px 0;
 }
@@ -169,4 +170,14 @@ main {
   font-family: "WorkSansL";
   letter-spacing: 2px;
   font-size: 1em;
+}
+
+.social {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.social i {
+  color: #aa8df6;
+  margin: 0 5px 0;
 }
