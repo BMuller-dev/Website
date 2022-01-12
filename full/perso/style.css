@@ -98,11 +98,11 @@ main {
 .hello_world p {
   overflow: hidden;
   white-space: nowrap;
-  width: 12ch;
+  width: 15ch;
   font-size: 5em;
   border-right: 3px solid;
   font-family: "WorkSansB";
-  animation: typing 2s steps(30), blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(45), blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
