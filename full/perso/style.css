@@ -1,221 +1,211 @@
 @font-face {
-    font-family: "WorkSansL";
-    src: url("fonts/WorkSansL.ttf") format("truetype");
+  font-family: "WorkSansL";
+  src: url("fonts/WorkSansL.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "WorkSansB";
-    src: url("fonts/WorkSansB.ttf") format("truetype");
+  font-family: "WorkSansB";
+  src: url("fonts/WorkSansB.ttf") format("truetype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* HEADER */
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    padding: 30px 0 0;
-    font-family: "WorkSansL";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 30px 0 0;
+  font-family: "WorkSansL";
 }
 
 header .logo {
-    font-family: "WorkSansB";
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-family: "WorkSansB";
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 ul li {
-    margin: 0 20px 0;
+  margin: 0 20px 0;
 }
 
 ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #aa8df6;
-    text-transform: uppercase;
-    font-size: 0.9em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #aa8df6;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 header ul li a::after {
-    content: "";
-    display: block;
-    border-bottom: solid 2px #f848b5;
-    padding-bottom: 10px;
-    transform: scaleX(0);
-    transition: transform 500ms ease-in-out;
+  content: "";
+  display: block;
+  border-bottom: solid 2px #f848b5;
+  padding-bottom: 10px;
+  transform: scaleX(0);
+  transition: transform 500ms ease-in-out;
 }
 
 header ul li a:hover:after {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
 }
 
 header ul li a:hover,
 header ul li a.active {
-    color: #f848b5;
+  color: #f848b5;
 }
-
 
 /* MAIN */
 
 main {
-    height: 90vh;
-    overflow: hidden;
+  height: 90vh;
+  overflow: hidden;
 }
 
 .separator {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .line {
-    margin-top: 15px;
-    width: 240px;
-    height: 1px;
-    background-color: #aa8df6;
+  margin-top: 15px;
+  width: 240px;
+  height: 1px;
+  background-color: #aa8df6;
 }
-
 
 /* HELLO WORLD */
 
 .hello_world {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100vh;
-    color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  color: black;
 }
 
 .hello_world p {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 13ch;
-    font-size: 5em;
-    border-right: 3px solid black;
-    animation: typing 2s steps(100), blink 0.5s step-end infinite alternate;
-    font-family: "WorkSansB";
+  overflow: hidden;
+  white-space: nowrap;
+  width: 590px;
+  font-size: 5em;
+  border-right: 3px solid black;
+  font-family: "WorkSansB";
+  animation: typing 2s steps(100), blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
-    from {
-        width: 0ch;
-    }
-    TO {
-        width: 13ch;
-    }
+  from {
+    width: 0;
+  }
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @keyframes transition {
-    to {
-        height: 20vh;
-    }
+  to {
+    height: 20vh;
+  }
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .explore {
-    background-color: #fff;
-    border: 1px solid black;
-    padding: 10px;
-    font-family: "WorkSansB";
-    cursor: pointer;
-    color: #aa8df6;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "WorkSansB";
+  cursor: pointer;
+  color: #aa8df6;
 }
 
 .explore:hover {
-    background-color: #ded4f7;
-    transform: scale(1.2);
+  background-color: #ded4f7;
+  transform: scale(1.2);
 }
-
 
 /* PRESENTATION */
 
 .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 100px 0;
 }
 
 .presentation h1 {
-    color: #aa8df6;
-    font-family: "WorkSansL";
-    font-size: 6.25em;
-    margin-bottom: 50px;
+  color: #aa8df6;
+  font-family: "WorkSansL";
+  font-size: 6.25em;
+  margin-bottom: 50px;
 }
 
 .presentation h2 {
-    color: #aa8df6;
-    font-size: 2em;
-    font-family: "WorkSansL";
+  color: #aa8df6;
+  font-size: 2em;
+  font-family: "WorkSansL";
 }
 
 .presentation h3 {
-    color: #aa8df6;
-    font-family: "WorkSansL";
-    letter-spacing: 2px;
-    font-size: 1em;
+  color: #aa8df6;
+  font-family: "WorkSansL";
+  letter-spacing: 2px;
+  font-size: 1em;
 }
 
 .social {
-    margin-top: 20px;
-    font-size: 1em;
+  margin-top: 20px;
+  font-size: 1em;
 }
 
 .social i {
-    color: #aa8df6;
-    margin: 0 5px 0;
+  color: #aa8df6;
+  margin: 0 5px 0;
 }
-
 
 /* SECONDARY */
 
 .secondary {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 /* FOOTER */
 
 .f_prems {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 10px;
-    padding: 50px 100px 50px;
-    font-family: "WorkSansL";
-    background-color: #aa8df6;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+  padding: 50px 100px 50px;
+  font-family: "WorkSansL";
+  background-color: #aa8df6;
+  color: #fff;
 }
 
 .f_prems .f_social a {
-    color: #fff;
+  color: #fff;
 }
