@@ -105,16 +105,19 @@ main {
 .hello_world p {
     overflow: hidden;
     white-space: nowrap;
-    width: 15ch;
+    width: 13ch;
     font-size: 5em;
     border-right: 3px solid black;
+    animation: typing 2s steps(100), blink 0.5s step-end infinite alternate;
     font-family: "WorkSansB";
-    animation: typing 2s steps(50), blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
     from {
-        width: 0;
+        width: 0ch;
+    }
+    TO {
+        width: 13ch;
     }
 }
 
