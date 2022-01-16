@@ -13,4 +13,6 @@
         <a href="https://www.linkedin.com/in/bryan-muller-62a9b81b0" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/BMuller-dev" target="_blank"><i class="fab fa-github"></i></a>
     </div>
+
+    <section class="secondary"></section>
 </section>

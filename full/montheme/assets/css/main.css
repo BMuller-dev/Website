@@ -1,11 +1,11 @@
 @font-face {
   font-family: "WorkSansL";
-  src: url("assets/fonts/WorkSansL.ttf") format("truetype");
+  src: url("../fonts/WorkSansL.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "WorkSansB";
-  src: url("assets/fonts/WorkSansB.ttf") format("truetype");
+  src: url("../fonts/WorkSansB.ttf") format("truetype");
 }
 
 * {
@@ -83,22 +83,9 @@ header ul li a.active {
 }
 
 /* MAIN */
-
-main {
-  height: 80vh;
+body {
+  height: 100vh;
   overflow: hidden;
-}
-
-.separator {
-  display: flex;
-  justify-content: center;
-}
-
-.line {
-  margin-top: 15px;
-  width: 240px;
-  height: 1px;
-  background-color: #aa8df6;
 }
 
 /* HELLO WORLD */
@@ -136,7 +123,7 @@ main {
 
 @keyframes transition {
   to {
-    height: 20vh;
+    height: 40vh;
   }
 }
 
@@ -199,4 +186,28 @@ main {
 .social i {
   color: #aa8df6;
   margin: 0 5px 0;
+}
+
+/* SECONDARY */
+
+.secondary {
+  height: 100vh;
+}
+
+/* FOOTER */
+
+.f_prems {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+  padding: 50px 100px 50px;
+  font-family: "WorkSansL";
+  background-color: #aa8df6;
+  color: #fff;
+}
+
+.f_prems .f_social a {
+  color: #fff;
 }
