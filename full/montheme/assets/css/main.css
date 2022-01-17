@@ -83,8 +83,8 @@ header ul li a.active {
 }
 
 /* MAIN */
-body {
-  height: 100vh;
+.container_home {
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 80vh;
   color: black;
 }
 
@@ -127,13 +127,22 @@ body {
   }
 }
 
-.button {
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.button_home {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.explore {
+.explore_home {
   background-color: #fff;
   border: 1px solid black;
   padding: 10px;
@@ -142,14 +151,14 @@ body {
   color: #aa8df6;
 }
 
-.explore:hover {
+.explore_home:hover {
   background-color: #ded4f7;
   transform: scale(1.2);
 }
 
 /* PRESENTATION */
 
-.presentation {
+.presentation_home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,32 +167,32 @@ body {
   padding: 0 100px 0;
 }
 
-.presentation h1 {
+.presentation_home h1 {
   color: #aa8df6;
   font-family: "WorkSansL";
   font-size: 6.25em;
   margin-bottom: 50px;
 }
 
-.presentation h2 {
+.presentation_home h2 {
   color: #aa8df6;
   font-size: 2em;
   font-family: "WorkSansL";
 }
 
-.presentation h3 {
+.presentation_home h3 {
   color: #aa8df6;
   font-family: "WorkSansL";
   letter-spacing: 2px;
   font-size: 1em;
 }
 
-.social {
+.social_home {
   margin-top: 20px;
   font-size: 1em;
 }
 
-.social i {
+.social_home i {
   color: #aa8df6;
   margin: 0 5px 0;
 }
@@ -196,18 +205,20 @@ body {
 
 /* FOOTER */
 
-.f_prems {
-  position: relative;
+footer {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-around;
   margin: 10px;
-  padding: 50px 100px 50px;
+
   font-family: "WorkSansL";
   background-color: #aa8df6;
   color: #fff;
 }
 
-.f_prems .f_social a {
+.f a {
   color: #fff;
+}
+
+.f {
+  padding: 50px;
 }

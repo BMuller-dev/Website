@@ -21,5 +21,3 @@
             <div class="line"></div>
         </div>
     </header>
-
-    <main>
