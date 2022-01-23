@@ -34,7 +34,7 @@ body {
   font-size: 1.5em;
 }
 
-.button {
+.buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,7 +44,7 @@ body {
   height: 80%;
 }
 
-.button > * {
+.button {
   flex: 21%;
   text-align: center;
   font-size: 2em;

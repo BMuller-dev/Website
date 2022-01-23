@@ -1,9 +1,8 @@
 const screen = document.querySelector(".screen");
-const button = document.querySelector(".button");
+const buttons = document.querySelector(".button");
 
-button.forEach(function (element) {
+buttons.forEach(function (element) {
   element.addEventListener("click", function (e) {
     console.log("test");
   });
 });
-
