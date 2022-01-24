@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Calculator</title>
-</head>
-<body>
-    <section class="calculator">
-        <div class="screen"><p></p></div>
-        <div class="buttons">
-            <div class="button sept">7</div>
-            <div class="button huit">8</div>
-            <div class="button neuf">9</div>
-            <div class="button division">/</div>
-            <div class="button quatre">4</div>
-            <div class="button cinq">5</div>
-            <div class="button six">6</div>
-            <div class="button multiplication">*</div>
-            <div class="button un">1</div>
-            <div class="button deux">2</div>
-            <div class="button trois">3</div>
-            <div class="button soustraction">-</div>
-            <div class="button zero">0</div>
-            <div class="button virgule">.</div>
-            <div class="button addition">+</div>
-            <div class="button egale">=</div>
-        </div>
-    </section>
-    
-</body>
+  </head>
+  <body>
+    <form class="calculator" name="calc">
+      <input class="value" type="text" name="txt" readonly="" />
+      <div class="numero">
+        <div class="num" onclick="document.calc.txt.value = ''">C</div>
+        <div class="num" onclick="document.calc.txt.value += '/'">/</div>
+        <div class="num" onclick="document.calc.txt.value += '*'">*</div>
+        <div class="num" onclick="document.calc.txt.value += '7'">7</div>
+        <div class="num" onclick="document.calc.txt.value += '8'">8</div>
+        <div class="num" onclick="document.calc.txt.value += '9'">9</div>
+        <div class="num" onclick="document.calc.txt.value += '-'">-</div>
+        <div class="num" onclick="document.calc.txt.value += '4'">4</div>
+        <div class="num" onclick="document.calc.txt.value += '5'">5</div>
+        <div class="num" onclick="document.calc.txt.value += '6'">6</div>
+        <div class="num" onclick="document.calc.txt.value += '+'">+</div>
+        <div class="num" onclick="document.calc.txt.value += '1'">1</div>
+        <div class="num" onclick="document.calc.txt.value += '2'">2</div>
+        <div class="num" onclick="document.calc.txt.value += '3'">3</div>
+        <div class="num" onclick="document.calc.txt.value += '0'">0</div>
+        <div class="num" onclick="document.calc.txt.value += '.'">.</div>
+        <div class="num equal">=</div>
+      </div>
+    </form>
+  </body>
 </html>
