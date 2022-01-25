@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Calculator";
+  src: url(fonts/Calculator.ttf) format("truetype");
+}
+
 * {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -27,9 +32,11 @@ body {
   border: none;
   outline: none;
   padding: 10px;
-  font-size: 18px;
+  font-size: 24px;
   box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.5);
   cursor: default;
+  font-weight: bold;
+  font-family: "Calculator";
 }
 
 .calculator div {
