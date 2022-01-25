@@ -1,3 +1,10 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: rgb(43, 41, 41);
+  background: rgb(43, 41, 41);
 }
 
 .calculator {
@@ -20,9 +27,36 @@ body {
   border: none;
   outline: none;
   padding: 10px;
-  font-size: 2em;
+  font-size: 18px;
+  box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.5);
+  cursor: default;
 }
 
-.num {
-  cursor: pointer;
+.calculator div {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: rgb(68, 65, 65);
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calculator .clear {
+  grid-column: span 2;
+  width: 122px;
+  background-color: #b8860b;
+}
+
+.calculator .equal {
+  background-color: #8291b2;
+}
+
+.calculator .num:active {
+  background-color: #333333;
+}
+
+.calculator .equal:active,
+.clear:active {
+  opacity: 0.8;
 }
