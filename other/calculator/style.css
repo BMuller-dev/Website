@@ -33,7 +33,6 @@ body {
   outline: none;
   padding: 10px;
   font-size: 24px;
-  box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.5);
   cursor: default;
   font-weight: bold;
   font-family: "Calculator";
