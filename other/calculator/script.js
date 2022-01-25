@@ -38,5 +38,4 @@ del.addEventListener('click', function() {
 
 percent.addEventListener('click', function() {
   value.value += '/100'
-
 })
