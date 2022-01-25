@@ -2,6 +2,7 @@ let equal = document.querySelector(".equal");
 let calcul = document.querySelectorAll(".num");
 let value = document.querySelector('.value');
 let del = document.querySelector('.del');
+let percent = document.querySelector('.percent');
 
 
 equal.addEventListener("click", function () {
@@ -17,7 +18,7 @@ equal.addEventListener("click", function () {
   }
   if (error != 1) {
     let x = eval(value.value);
-    value.value = x.toFixed(2);
+    value.value = parseFloat(x.toFixed(2));
   }
 });
 
@@ -33,4 +34,9 @@ calcul.forEach(element => {
 del.addEventListener('click', function() {
   let x = value.value
   value.value = x.slice(0,-1); 
+})
+
+percent.addEventListener('click', function() {
+  value.value += '/100'
+
 })
