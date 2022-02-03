@@ -3,9 +3,19 @@
     src: url("fonts/Rowdies.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "DancingScript";
+    src: url(fonts/DancingScript.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #75a9c7;
 }
 
 
@@ -16,6 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
+    background-color: #fff;
     font-family: "Rowdies";
 }
 
@@ -25,7 +36,7 @@ header .logo {
     font-size: 2em;
     letter-spacing: 0.6em;
     text-decoration: none;
-    color: #5CB8BD
+    color: #caf0f8
 }
 
 header ul {
@@ -41,7 +52,7 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    color: #5CB8BD;
+    color: #caf0f8;
     padding: 10px;
     border-radius: 20px;
     font-size: 1.5em;
@@ -49,7 +60,7 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a.active {
-    background-color: #5CB8BD;
+    background-color: #caf0f8;
     color: #fff;
 }
 
@@ -63,6 +74,10 @@ header ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main video,
+img {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -84,13 +99,36 @@ header ul li a.active {
     mix-blend-mode: screen;
 }
 
+.travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main p {
-    position: absolute;
-    font-size: 8em;
+    flex-grow: 1;
+    font-size: 10em;
     font-weight: 700;
-    letter-spacing: 0.2em;
-    font-family: "Rowdies";
+    font-family: "DancingScript";
     color: #fff;
+    z-index: 1;
+}
+
+.main a {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-decoration: none;
+    width: 7ch;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: #fff;
+    border: solid black 1px;
+    z-index: 1;
+}
+
+.main a:active {
+    background-color: rgba(0, 0, 0, 0.644);
 }
 
 
@@ -99,32 +137,37 @@ header ul li a.active {
 .more {
     display: flex;
     justify-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
-    background: #5CB8BD;
+    height: 1500px;
+    background: linear-gradient(#0b664b 30%, #75a9c7);
 }
 
 .more::before {
     content: "";
-    height: 200px;
+    height: 300px;
     width: 100%;
-    margin-top: -20px;
-    background: linear-gradient( #fff 30%, #5CB8BD);
+    background: linear-gradient( #fff 30%, #0b664b);
     z-index: 1000;
 }
 
+
+/* PANNEL */
+
 .pannel {
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 700px;
     width: 100%;
-    padding: 0 100px 0;
-    gap: 50px;
+    padding: 0 200px 0;
+    gap: 100px;
 }
 
 .pannel div {
     height: 500px;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -139,5 +182,34 @@ header ul li a.active {
 }
 
 .bg {
-    background: url('img/sand.jpeg');
+    display: flex;
+    justify-content: center;
+    background: url('img/water.jpg');
+    pointer-events: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #588094;
+    height: 100px;
+    margin: 10px;
+    padding: 100px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .contact {
+    margin-top: 50px;
 }
