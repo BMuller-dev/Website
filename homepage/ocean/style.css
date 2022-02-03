@@ -99,10 +99,12 @@ header ul li a.active {
 .more {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background: #5CB8BD;
     overflow: hidden;
+    z-index: 5;
 }
 
 .more::before {
@@ -112,4 +114,32 @@ header ul li a.active {
     margin-top: -20px;
     background: linear-gradient( #fff 30%, #5CB8BD);
     z-index: 1000;
+}
+
+.pannel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 700px;
+    width: 100%;
+    padding: 0 100px 0;
+    gap: 50px;
+}
+
+.pannel div {
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pannel .left,
+.pannel .right {
+    align-self: center;
+}
+
+.pannel .mid {
+    height: 700px;
+}
+
+.bg {
+    background: url('img/sand.jpeg');
 }
