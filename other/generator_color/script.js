@@ -31,6 +31,4 @@ button.addEventListener('click', function() {
         e.innerHTML = newColor;
     });
 })
-
-
 color();
