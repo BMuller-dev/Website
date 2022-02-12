@@ -5,7 +5,6 @@ function color() {
         document.querySelector(".wrap").appendChild(box);
     }
 }
-
 const button = document.querySelector(".refresh");
 const colorBox = document.querySelectorAll(".box");
 
