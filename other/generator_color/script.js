@@ -19,13 +19,14 @@ function randomHexColor() {
     return "#" + color;
 }
 
-button.addEventListener("click", addColor)
-
-function addColor() {
+button.addEventListener("click", function() {
     colorBox.forEach(e => {
         let newColor = randomHexColor();
-        e.style.backgroundColor = newColor;
-        e.innerHTML = newColor;
+        e.target.style.backgroundColor = newColor;
+        e.target.innerHTML = newColor;
     });
-}
+})
+
+
+
 color();
