@@ -42,5 +42,9 @@
     width: 20%;
     font-size: 1.6em;
     border: 2px solid #ffffff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     pointer-events: stroke;
 }
