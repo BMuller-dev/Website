@@ -5,6 +5,8 @@ function color() {
         document.querySelector(".wrap").appendChild(box);
     }
 }
+
+color();
 const button = document.querySelector(".refresh");
 const colorBox = document.querySelectorAll(".box");
 
@@ -19,14 +21,13 @@ function randomHexColor() {
     return "#" + color;
 }
 
-button.addEventListener("click", function() {
-    colorBox.forEach(e => {
+button.addEventListener("click", addColors)
+
+function addColors() {
+    colorBox.forEach(function(e) {
         let newColor = randomHexColor();
-        e.target.style.backgroundColor = newColor;
-        e.target.innerHTML = newColor;
+        e.style.backgroundColor = newColor;
+        e.innerHTML = newColor;
     });
-})
-
-
-
-color();
+}
+addColors()
