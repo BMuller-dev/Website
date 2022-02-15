@@ -11,6 +11,7 @@
 }
 
 .heart {
+    mix-blend-mode: hue;
     position: fixed;
     top: 50%;
     margin: 0 45.85% 0;
@@ -25,7 +26,7 @@
     top: 0;
     width: 100px;
     height: 160px;
-    background: #ffccd5;
+    box-shadow: inset 100px 100px rgba(221, 219, 219, 0.534);
     border-radius: 50px 50px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
