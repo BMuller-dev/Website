@@ -5,9 +5,41 @@
 
 .scene {
     display: flex;
-    height: 100vh;
+    background: linear-gradient(#14213d 50%, #ff758f);
+    height: 200vh;
+    z-index: 10;
+}
+
+.heart {
+    position: fixed;
+    top: 50%;
+    margin: 0 45.85% 0;
+    z-index: 1;
+}
+
+.shape:before,
+.shape:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 160px;
+    background: #ffccd5;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.shape:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
 }
 
 .kiss {
+    align-self: flex-end;
+    height: 25%;
     margin: 0 auto 0;
+    z-index: 9;
 }
