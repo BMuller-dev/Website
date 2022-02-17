@@ -5,37 +5,54 @@
 
 .scene {
     display: flex;
-    background: linear-gradient(#14213d 50%, #ff758f);
+    background: linear-gradient(#141b3d 50%, #fd5f5f);
     height: 200vh;
     z-index: 10;
 }
 
 .heart {
-    mix-blend-mode: hue;
     position: fixed;
-    top: 50%;
-    margin: 0 45.85% 0;
+    mix-blend-mode: difference;
+    top: 52%;
+    margin: 0 48.1% 0;
     z-index: 1;
+    transform-origin: center;
+    animation: pulse 1s infinite linear;
 }
 
-.shape:before,
-.shape:after {
+.shape {
+    position: absolute;
+    background-color: #233866;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-45deg);
+}
+
+.shape::before {
     position: absolute;
     content: "";
+    background-color: #233866;
     left: 100px;
     top: 0;
-    width: 100px;
-    height: 160px;
-    box-shadow: inset 100px 100px rgba(221, 219, 219, 0.534);
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
+    width: 80px;
+    height: 100px;
+    border-radius: 0 100% 100% 0;
 }
 
-.shape:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
+.shape::after {
+    position: absolute;
+    content: "";
+    background-color: #233866;
+    bottom: 100px;
+    width: 100px;
+    height: 80px;
+    border-radius: 100% 100% 0 0;
+}
+
+@keyframes pulse {
+    10% {
+        transform: scale(1.1);
+    }
 }
 
 .kiss {
